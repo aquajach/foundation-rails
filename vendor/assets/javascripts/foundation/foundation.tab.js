@@ -22,7 +22,7 @@
 
       S(this.scope).off('.tab').on('click.fndtn.tab', '[' + this.attr_name() + '] > dd > a', function (e) {
         e.preventDefault();
-        document.location.hash = this.href.split('#')[1]+'/';
+        document.location.hash = this.href.split('#')[1];
         e.stopPropagation();
 
         var tab = S(this).parent(),
